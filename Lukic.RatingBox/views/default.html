@@ -1,0 +1,7 @@
+<div class="LukicPropertyEditors" ng-controller="Lukic.RatingBox.Controller">
+    <div class="star-rating">
+        <span ng-click="onclick(n)" class="{{fontClass}}" ng-class="(model.value < n) ? '{{emptyStar}}' : '{{filledStar}}'" data-rating="{{n}}" ng-repeat="n in range"></span>
+        <input type="hidden" name="txt{{myId}}" class="rating-value" value="{{model.value}}" >
+        <a class="umb-node-preview__action umb-node-preview__action--red" title="Remove" href="" ng-show="model.value > 0" ng-click="remove()"><localize key="general_remove">Remove</localize></a>
+    </div>
+</div>

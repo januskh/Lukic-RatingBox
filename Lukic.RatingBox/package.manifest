@@ -1,0 +1,28 @@
+{
+    "propertyEditors": [
+        {
+            "alias": "Lukic.RatingBox",
+            "name": "Lukic RatingBox",
+            "editor": {
+                "view": "~/App_Plugins/Lukic.RatingBox/views/default.html",
+                "hideLabel": false
+            },
+            "prevalues": {
+                "fields": [
+                    {
+                        "label": "Amount of stars",
+                        "description": "How many stars should be shown",
+                        "key": "starsAmount",
+                        "view": "number"
+                    }
+                ]
+            }
+        }
+    ],
+    "javascript": [
+        "~/App_Plugins/Lukic.RatingBox/controllers/Lukic.RatingBox.controller.js"
+    ],
+    "css": [
+        "~/App_Plugins/Lukic.RatingBox/styles/styles.css"
+    ]
+}
